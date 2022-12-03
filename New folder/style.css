@@ -1,0 +1,39 @@
+body {
+  font-family: 'Poppins', sans-serif;
+
+  height: 350px;
+  background: #fc00fc;
+  background: -webkit-linear-gradient(to right, #00dbff, #fc00fc);
+  background: linear-gradient(to right, #00dbff, #fc00fc);
+}
+.container {
+  text-align: center;
+}
+h1 {
+  font-size: 4em;
+  color: #fcfcfc;
+}
+#demo {
+  color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.snowflake {
+  position: absolute;
+  background-image: url('./snow-flake-8.svg');
+  background-size: cover;
+  border-radius: 50px;
+  animation: fall 2s linear infinite;
+}
+@keyframes fall {
+  0% {
+    transform: translate(50%, 50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50%, 100%);
+    opacity: 0;
+  }
+}
